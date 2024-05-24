@@ -17,6 +17,6 @@ unique_players = all_players.unique()
 for player in unique_players:
     print(player)
 
-#season.txt
+#seasons.txt
 for season in seasons_list:
   print(season)
