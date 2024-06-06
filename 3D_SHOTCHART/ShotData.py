@@ -1,3 +1,5 @@
+#QUERY SHOTCHART DATA FOR ANY NBA PLAYER VIA nba_api
+
 import numpy as np
 import pandas as pd
 
