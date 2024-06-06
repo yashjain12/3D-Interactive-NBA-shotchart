@@ -1,3 +1,4 @@
+#FLASK APP
 from flask import Flask, render_template, request
 from drawer import *
 from animator import *
