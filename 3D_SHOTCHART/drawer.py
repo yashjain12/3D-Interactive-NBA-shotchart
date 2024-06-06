@@ -1,3 +1,4 @@
+#CANVAS UPON WHICH BASKETBALL COURT/HOOP/NET/BACKBOARD/ETC is drawn
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -325,7 +326,7 @@ def ax_base(ax):
     
     ax.view_init(40, -112, 0)
 
-def ax_base2(fig, ax, shotchart):
+def ax_base2(fig, ax, shotchart): #Responsible for creating the 3D Intensity Chart
     ax_base(ax)
     x_linspace = np.linspace(-35, -shotchart['LOC_Y'].min(), 20)
     y_linspace = np.linspace(shotchart['LOC_X'].min(), shotchart['LOC_X'].max(), 20)
