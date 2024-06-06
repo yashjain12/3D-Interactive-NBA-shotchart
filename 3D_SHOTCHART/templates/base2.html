@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block shotchart %}
+<div style = "text-align: center; border-width: 3px; border-style: inset; border-color: grey; border-bottom: 0px">
+
+        <h3 style = "margin-bottom:0px;">Animated Shotchart for {{playerName}} ({{playerSZN}})</h3>
+        {{rendered_anim|safe}}
+</div>
+<div style = "width: 100%; box-sizing: border-box; height: 20px; border-width: 3px; border-style: inset; border-color: grey; border-top:0px;border-bottom:0px"> </div>
+<div style = "text-align: center; border-width: 3px; border-style: inset; border-color: gray; border-top:0px">
+    <h3 style = "margin-bottom:0px; margin-top: 0px">Shotchart Frequency/Intensity for {{playerName}} ({{playerSZN}}) with an efficiency map</h3>
+    <img src = "{{url_for('static', filename = 'shotchart_intensity.png')}}">
+</div>
+
+{% endblock %}
